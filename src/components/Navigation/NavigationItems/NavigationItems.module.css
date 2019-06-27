@@ -1,0 +1,16 @@
+.NavigationItems {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+	.NavigationItems {
+		flex-flow: column;
+		margin-top: 3px;
+	}
+}
+
+.Active,
+.NavigationItems a:active {
+	color: rgb(218, 150, 111) !important;
+}

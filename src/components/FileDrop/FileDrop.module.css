@@ -1,0 +1,82 @@
+.FileDrop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.Column {
+	display: flex;
+}
+
+@media (max-width: 655px) {
+	.Column {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+.Column input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.Column label {
+	transition: 0.3s ease;
+	font-size: 19px;
+	padding: 22px 73px;
+	margin: 5px;
+	box-sizing: border-box;
+	font-weight: 100;
+	letter-spacing: 0.6px;
+	color: #878787;
+	border: 1px solid;
+	border-radius: 6px;
+	display: inline-block;
+	text-align: center;
+}
+
+@media (max-width: 655px) {
+	.Column label {
+		padding: 18px 90px 22px 78px;
+		margin: 8px 0px 8px 0px;
+		width: 100%;
+	}
+}
+
+.Column label:hover {
+	opacity: 0.8;
+	transform: scale(1.02);
+	cursor: pointer;
+}
+
+.UploadButton {
+	transition: 0.2s ease;
+	width: 583px;
+	background-color: #e3d180;
+	color: white;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 100;
+	letter-spacing: 0.6px;
+	padding: 22px 78px;
+	margin: 5px;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 6px;
+}
+
+@media (max-width: 655px) {
+	.UploadButton {
+		width: 100%;
+	}
+}
+
+.UploadButton:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}

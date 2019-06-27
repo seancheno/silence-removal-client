@@ -1,0 +1,32 @@
+.Wave {
+    width: 585px;
+    height: 176px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -16px;
+    margin-bottom: -68px;
+
+}
+
+@media (max-width: 655px) {
+	.Wave {
+		width: 100%;
+		height: 170px;
+	}
+}
+
+.WaveformContainer {
+	max-width: 100%;
+	width: 1080px;
+	height: 100px;
+}
+
+.WaveformBg {
+	fill: rgb(179, 179, 179);
+}
+
+@media screen and (max-width: 655px) {
+	.WaveformBg {
+		fill: rgb(102, 102, 102);
+	}
+}

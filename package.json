@@ -1,0 +1,77 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^2.1.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^4.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.7.1",
+    "react-test-renderer": "^16.8.6",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.3.0",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "url-loader": "^2.0.0",
+    "webpack": "^4.34.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.3",
+    "webpack-dev-server": "^3.7.1",
+    "webpack-manifest-plugin": "^2.0.4",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@react-native-community/slider": "^1.1.2",
+    "audiobuffer-to-wav": "^1.0.0",
+    "axios": "^0.18.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^10.1.5",
+    "react-native-elements": "^1.1.0",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.1",
+    "react-s3": "^1.3.1",
+    "react-scripts": "3.0.1",
+    "react-scroll-up-button": "^1.6.4",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "to-string-loader": "^1.1.5",
+    "typeface-montserrat": "0.0.54",
+    "uuid": "^3.3.2"
+  },
+  "main": "src/index",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

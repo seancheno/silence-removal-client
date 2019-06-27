@@ -1,0 +1,36 @@
+.NavigationItem {
+	box-sizing: border-box;
+	margin: 10px;
+	display: flex;
+	height: 100%;
+	width: auto;
+	align-items: center;
+}
+
+.NavigationItem a {
+	text-decoration: none;
+	color: #494949;
+	height: 0px;
+	padding: 0px 12px 0px 73px;
+	font-size: 17px;
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+	.NavigationItem a {
+		padding: 9px 12px 9px 1px;
+		margin-left: 10px;
+	}
+
+	.NavigationItem {
+		margin: 0;
+	}
+}
+
+.NavigationItem:active {
+	color: green;
+}
+
+.Active a {
+	color: blue !important;
+}

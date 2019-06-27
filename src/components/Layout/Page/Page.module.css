@@ -1,0 +1,120 @@
+.Page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3em 4em 2em 2em;
+	animation: show 0.2s ease-in-out;
+}
+@media (max-width: 1200px) {
+	.Page {
+		padding: 2em;
+	}
+}
+
+@media (max-width: 655px) {
+	.Page {
+		padding: 4em 2em 2em 2em;
+	}
+}
+
+.Header {
+	height: 100%;
+	width: 60%;
+	padding: 3% 3% 0% 3%;
+	padding-bottom: 90px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(255, 255, 255);
+}
+
+.Container {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	width: 90%;
+	max-width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.Content {
+	background-color: rgb(248, 248, 248);
+	width: 100%;
+	box-sizing: border-box;
+	padding: 3% 3% 0% 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+span {
+	color: rgb(56, 118, 211);
+}
+
+.CircleSeperator {
+	width: 7px;
+	height: 7px;
+	margin: 5px 0px 15px 0px;
+	border-radius: 50%;
+	background-color: #55add7;
+}
+
+.Button {
+	transition: 0.2s ease;
+	width: 288px;
+	background-color: #e2cf78;
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 22px 78px;
+	margin: 5px;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 6px;
+}
+
+@media (max-width: 655px) {
+	.Button {
+		margin: 7px 0px;
+		width: 100%;
+	}
+}
+
+.Button:hover {
+	opacity: 0.8;
+	transform: scale(1.02);
+	cursor: pointer;
+}
+
+.EmptySpace {
+	margin-top: 45px;
+}
+
+@media (max-width: 655px) {
+	.EmptySpace {
+		margin-top: 35px;
+	}
+}
+
+.ButtonWrapper {
+	display: flex;
+}
+
+@media (max-width: 655px) {
+	.ButtonWrapper {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
