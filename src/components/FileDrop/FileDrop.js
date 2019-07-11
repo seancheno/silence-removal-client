@@ -116,7 +116,7 @@ class FileDrop extends Component {
 				>
 					Upload
 				</button>
-				<span style={{ color: "#aeaeae" }}>{placeholder}</span>
+				<span style={{ color: "#ffffff" }}>{placeholder}</span>
 			</div>
 		);
 	}
